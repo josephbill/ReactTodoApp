@@ -11,64 +11,104 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+## creation of a react app .
 
 npx create-react-app appname
+
+### Key fEATURES OF rEACT js
+1. Component-based architecture : components are reusable pieces of UI that can be composed together to form complex interfaces.  
+
+navbar : component 1  
+
+image : component 2 
+                             ----------------->   Main component  App.js ()
+paragraph : component 3 
+
+footer  : footer section  
+
+
+export default function Navbar(){
+    return(
+
+    )
+}
+
+<!-- functional components -->
+export default function App(){
+
+    const fetchUser = () => {
+        fetch()
+           .then()
+    }
+
+    fetchUser()
+
+      return(
+        <Navbar/> : nav links takes me to another component called contact us 
+        <Image/>
+        <Paragraph/>
+        <Footer/>
+      )
+}
+
+Create a form  component
+
+export default function FormComponent(){
+    return(
+
+    )
+}
+
+export default function ContactUs(){
+    return(
+          <Navbar/>
+         <FormComponent/>
+    )
+}
+
+export default function QuotationForm(){
+    <FormComponent/>
+}
+
+function NameofComponent(){
+   const nameoffucntion = () => {
+
+   }
+
+}
+
+export default NameofComponent;
+
+
+2. JSX syntax : A syntax extension that allows devs to write HTML like code within JS. 
+3. Virtual DOM : A lightweight representation of the real DOM.  React only updates the Virtual DOM , then determines the most efficient way of updating the real 
+DOM 
+This approach improves performances especially with complex UI's 
+4. State and Props 
+   - This is how react manages data. 
+   - State allows components to create and manage their own data 
+   - Props allow child components to receive data from their parent components 
+
+Declarative Programming. 
+
+
+### Benefits
+1.  Efficiency and Performance 
+2.  Modularity and Reusability 
+3.  Interactivity and User Experience 
+4.  Data management 
+5.  Development speed. 
+
+
+Overview 
+
+CRUD : TODO List app 
+- Component usage 
+- Props usage 
+- State usage 
+- Parent to child communication / child to Parent communication 
+
+
+5 MINUTES BREAK :

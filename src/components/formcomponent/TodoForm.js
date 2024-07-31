@@ -13,8 +13,9 @@ export default function TodoForm({addToDo,sharedText}){
         if(inputValue.trim()){
             addToDo({
                 text: inputValue, 
-                completed: false
+                isCompleted: false
             });
+            // clear the form and reset the state reference
             setInputValue('')
         }
     }
@@ -33,4 +34,5 @@ export default function TodoForm({addToDo,sharedText}){
         </div>
       )
 }
+
 

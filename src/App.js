@@ -15,14 +15,29 @@ function App() {
       // console.log(JSON.stringify(todos))
   } 
 
+  // method for update 
+  const updateTodo = (index, newText) => {
+       const newTodos = [...todos]
+       newTodos[index].text = newText
+      //  update the state 
+      setTodos(newTodos)
+  }
+
+  const deleteTodo = (index) => {
+    const newTodos  = todos.filter((_,i) => i !== index)
+    setTodos(newTodos)
+  }
+
+
   return ( 
     <div className="App">
        <h4>TO-DO-LIST</h4>
-       <TodoForm  addToDo={addToDo} sharedText="Joseph's todo list"/>
-       <TodoList todos={todos} />
+       <TodoForm  addToDo={addToDo} sharedText="Class todo list"/>
+       <TodoList todos={todos} updateTodo={updateTodo} deleteTodo={deleteTodo} />
      
     </div>
   );
 }
 // JSX
 export default App;
+
