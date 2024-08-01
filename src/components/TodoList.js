@@ -13,7 +13,6 @@ export default function TodoList({todos,updateTodo,deleteTodo}){
           { todos.length === 0 ? (
                 <div>
                   <p>The List is empty</p>
-                  <p>This is my change</p>
                 </div>
           ) : (
             <ul>
