@@ -31,6 +31,9 @@ export default function TodoForm({addToDo,sharedText}){
                 />
                 {/* dropdown, radio button, form type file: collection of documents  */}
                 <button type="submit">Add To Do</button>
+
+                <button type="reset">reset form</button>
+                <div>This is the change </div>
             </form>
         </div>
       )
