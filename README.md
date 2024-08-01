@@ -112,3 +112,17 @@ CRUD : TODO List app
 
 
 5 MINUTES BREAK :
+
+
+component APp  -> parent component 
+load up child components 
+TodoForm 
+TodoList 
+
+TodoForm or todolist can also have child component 
+
+
+### DATA COMMUNICATION 
+1. Parent to child communication
+2. Child to parent communication 
+   Facilitated by the idea of props. 
