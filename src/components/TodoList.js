@@ -11,7 +11,10 @@ export default function TodoList({todos,updateTodo,deleteTodo}){
       return(
         <>
           { todos.length === 0 ? (
-                <p>The List is empty</p>
+                <div>
+                  <p>The List is empty</p>
+                  <p>This is my change</p>
+                </div>
           ) : (
             <ul>
                {todos.map((todo, index) => (
