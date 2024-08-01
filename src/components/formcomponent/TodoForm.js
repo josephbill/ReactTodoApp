@@ -23,6 +23,7 @@ export default function TodoForm({addToDo,sharedText}){
       return(
         <div>
             <h4>{sharedText}</h4>
+            <h4>notsharedtext</h4>
             <form onSubmit={handleSubmit}>
                 <input
                    type="text"
@@ -30,6 +31,8 @@ export default function TodoForm({addToDo,sharedText}){
                    onChange={(e) => setInputValue(e.target.value) }
                 />
                 <button type="submit">Add To Do</button>
+                <button type="reset">reset form</button>
+
             </form>
         </div>
       )
