@@ -33,6 +33,7 @@ export default function TodoForm({addToDo,sharedText}){
                 <button type="submit">Add To Do</button>
                 <button type="reset">reset form</button>
                 <div>This is the change </div>
+                <div>Another statement</div>
             </form>
         </div>
       )
